@@ -14,7 +14,7 @@ public static void main(String [] args){
   String username = sc.nextLine();
   Matcher m = p.matcher(username);
 
-  if(m.find()){
+  if(m.find() && m.group().equals(username)){
    System.out.println("Valid Username");
   }
   else{

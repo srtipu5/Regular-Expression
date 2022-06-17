@@ -19,7 +19,7 @@ public static void main(String [] args){
   String phoneNo = sc.nextLine();
   Matcher m = p.matcher(phoneNo);
 
-  if(m.find()){
+  if(m.find() && m.group().equals(phoneNo)){
    System.out.println("Valid Phone Number");
   }
   else{

@@ -12,7 +12,7 @@ public static void main(String [] args){
   String email = sc.nextLine();
   Matcher m = p.matcher(email);
 
-  if(m.find()){
+  if(m.find() && m.group().equals(email)){
    System.out.println("Valid Email");
   }
   else{
